@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="addTabIndex()">
+
+    <header>
+        <h1>My Accessible Photo Gallery</h1>
+        <p>Hover over or use the Tab key to explore the photos.</p>
+    </header>
+
+    <main>
+        <div id="image" role="status" aria-live="polite">
+            Hover over an image below to display here.
+        </div>
+
+        <section class="gallery" aria-label="Photo gallery">
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+                     alt="Beautiful mountain landscape"
+                     onmouseover="upDate(this)"
+                     onmouseleave="undo()"
+                     onfocus="upDate(this)"
+                     onblur="undo()">
+                <figcaption>Mountain Landscape</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600"
+                     alt="Mountain lake surrounded by trees"
+                     onmouseover="upDate(this)"
+                     onmouseleave="undo()"
+                     onfocus="upDate(this)"
+                     onblur="undo()">
+                <figcaption>Mountain Lake</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=600"
+                     alt="Sunrise over a green field"
+                     onmouseover="upDate(this)"
+                     onmouseleave="undo()"
+                     onfocus="upDate(this)"
+                     onblur="undo()">
+                <figcaption>Beautiful Sunrise</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600"
+                     alt="Sunlight shining through a forest"
+                     onmouseover="upDate(this)"
+                     onmouseleave="undo()"
+                     onfocus="upDate(this)"
+                     onblur="undo()">
+                <figcaption>Green Forest</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600"
+                     alt="Beautiful lake and mountain scenery"
+                     onmouseover="upDate(this)"
+                     onmouseleave="undo()"
+                     onfocus="upDate(this)"
+                     onblur="undo()">
+                <figcaption>Lake and Mountains</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=600"
+                     alt="Ocean waves reaching the shore"
+                     onmouseover="upDate(this)"
+                     onmouseleave="undo()"
+                     onfocus="upDate(this)"
+                     onblur="undo()">
+                <figcaption>Ocean Waves</figcaption>
+            </figure>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Accessible Photo Gallery - Final Project</p>
+    </footer>
+
+</body>
+</html>
